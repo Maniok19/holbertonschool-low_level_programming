@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * Print sentence
- * Description: print the sentence
+ * main - Entry point
+ *
+ * Description: Prints a sentence about programming
+ * Return: Always 0 (Success)
  */
-
 int main(void)
-	{
+{
 	puts("\"Programming is like building a multilingual puzzle");
-	return (0); /* 0 for no error */
-	}
+	return (0);
+}
