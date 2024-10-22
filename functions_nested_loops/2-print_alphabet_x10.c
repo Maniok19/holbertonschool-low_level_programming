@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print alphabet 10x
- * void print_alphabet - print alphabet 1x
- * Return: Always 0
+ * print_alphabet - print alphabet 1x
+ *
+ * Return: void
  */
+
 
 void print_alphabet(void)
 {
@@ -17,12 +18,18 @@ void print_alphabet(void)
 	_putchar('\n');
 }
 
+/**
+ * print_alphabet_x10 - print 10x
+ *
+ * Return: void
+ */
+
 void print_alphabet_x10(void)
 {
 	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-	print_alphabet();
+		print_alphabet();
 	}
 }
