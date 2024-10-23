@@ -3,7 +3,7 @@
 /**
  * _abs - absolute value
  * @n: the integer to check
- * Return: always 0
+ * Return: always abs n
  */
 
 int _abs(int n)
