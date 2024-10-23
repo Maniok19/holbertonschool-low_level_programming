@@ -19,6 +19,7 @@ if (n <= 98)
 			printf(", ");
 		}
 	}
+	printf("\n");
 }
 else
 {
@@ -30,5 +31,6 @@ else
 			printf(", ");
 		}
 	}
+	printf("\n");
 }
 }
