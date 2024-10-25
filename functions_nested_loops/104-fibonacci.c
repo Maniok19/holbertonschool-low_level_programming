@@ -6,9 +6,9 @@
 int main(void)
 {
 	int count;
-	unsigned long int fib1 = 1;
-	unsigned long int fib2 = 2;
-	unsigned long int fibn;
+	unsigned long long int fib1 = 1;
+	unsigned long long int fib2 = 2;
+	unsigned long long int fibn;
 
 	printf("%lu, %lu", fib1, fib2);
 
