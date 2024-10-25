@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int fib1 = 0;
 	unsigned long int fib2 = 1;
 	unsigned long int fibn;
-	unsigned long int result;
+	unsigned long int result = 0;
 
 	for (count = 1; count <= 32; count++)
 	{
