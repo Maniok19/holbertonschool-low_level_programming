@@ -11,11 +11,10 @@ int main(void)
 	unsigned long int fibn;
 	unsigned long int result;
 
-
 	for (count = 1; count <= 50; count++)
 	{
 		fibn = fib1 + fib2;
-		
+
 		if (fibn % 2 == 0 && fibn < 4000000)
 		{
 			result = result + fibn;
