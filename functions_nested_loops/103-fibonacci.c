@@ -11,7 +11,7 @@ int main(void)
 	unsigned long int fibn;
 	unsigned long int result;
 
-	for (count = 1; count <= 50; count++)
+	for (count = 1; count <= 32; count++)
 	{
 		fibn = fib1 + fib2;
 
