@@ -14,11 +14,19 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	half = len / 2;
+	half = (len - 1) / 2;
 	/* print the half*/
 	for (num = half; str[num] != '\0'; num++)
 	{
 		_putchar(str[num]);
 	}
 	_putchar('\n');
+}
+int main(void)
+{
+    char *str;
+
+    str = "0123456789";
+    puts_half(str);
+    return (0);
 }
