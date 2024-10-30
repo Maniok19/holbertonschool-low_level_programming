@@ -14,7 +14,14 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	half = (len - 1) / 2;
+	if (len % 2 == 0)
+	{
+		half = len / 2;
+	}
+	else
+	{
+		half = (len + 1) / 2;
+	}
 	/* print the half*/
 	for (num = half; str[num] != '\0'; num++)
 	{
