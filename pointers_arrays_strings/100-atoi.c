@@ -17,14 +17,9 @@ int _atoi(char *s)
         else if (*s >= '0' && *s <= '9')
         {
             started = 1;
-            if (result > 214748364)
-                return (sign == 1) ? 2147483647 : -2147483648;
-            if (result == 214748364)
+            if (result > 214748364 || (result == 214748364 && *s > '7'))
             {
-                if (sign == 1 && *s > '7')
-                    return 2147483647;
-                if (sign == -1 && *s > '8')
-                    return -2147483648;
+                return (sign == 1) ? 2147483647 : -2147483648;
             }
             result = result * 10 + (*s - '0');
         }
@@ -32,6 +27,9 @@ int _atoi(char *s)
             break;
         s++;
     }
+
+    if (sign == -1 && result == 2147483648)
+        return -2147483648;
 
     return result * sign;
 }
