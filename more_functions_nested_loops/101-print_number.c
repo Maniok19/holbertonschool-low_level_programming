@@ -21,11 +21,13 @@ void print_number(int n)
 		_putchar('6');
 		_putchar('4');
 		_putchar('8');
-		}
-		else
-		{
-			n = -n;
-		}
+		return;
+	}
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
 	}
 
 	if (n / 10)
