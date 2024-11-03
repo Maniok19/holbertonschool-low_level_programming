@@ -5,11 +5,8 @@
  */
 void print_number(int n)
 {
-	if (n < 0)
+	if (n == -2147483648)
 	{
-		_putchar('-');
-		if (n == -2147483648)
-		{
 		_putchar('-');
 		_putchar('2');
 		_putchar('1');
