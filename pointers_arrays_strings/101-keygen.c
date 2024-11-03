@@ -2,24 +2,33 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 10
+#define SUM 2772
+/**
+ * main- give random passworld
+ * Return: Always 0
+ */
 
 int main(void)
 {
-	char password[PASSWORD_LENGTH + 1];
-	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	int charset_size = sizeof(charset) - 1;
-	int i;
+	int sum = 0;
+	char c;
 
 	srand(time(NULL));
 
-	for (i = 0; i < PASSWORD_LENGTH; i++)
+	while (sum < SUM)
 	{
-		password[i] = charset[rand() % charset_size];
+		c = rand() % 128;
+		if ((c >= 32) && (c <= 126))
+		{
+			putchar(c);
+			sum += c;
+		}
+		if (sum + 32 > SUM)
+			break;
 	}
-	password[PASSWORD_LENGTH] = '\0';
 
-	printf("%s", password);
+	if (sum < SUM)
+		putchar(SUM - sum);
 
 	return (0);
 }
