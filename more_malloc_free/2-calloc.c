@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _calloc - alloc mem for array
+ * _calloc - alloc mem for array love
  * @nmemb: number of column
  * @size: number of lines
  * Return: pointer to allocated memory
