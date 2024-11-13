@@ -5,7 +5,7 @@
 /**
  * count_words - Counts the number of words in a string
  * @str: The string to count words in
- * 
+ *
  * Return: The number of words in the string
  *
  * Description: This function iterates through the string,
