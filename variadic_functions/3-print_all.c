@@ -75,7 +75,6 @@ void is_string(char *separator, va_list list)
 	char *str = va_arg(list, char*);
 
 	if (str == NULL)
-		printf("%s(nil)", separator);
-	else
-		printf("%s%s", separator, str);
+		str = "(nil)";
+	printf("%s%s", separator, str);
 }
