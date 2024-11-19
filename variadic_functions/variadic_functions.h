@@ -9,7 +9,7 @@
 typedef struct format
 {
 	char *fo;
-	int (*f)(char *separator, va_list ap);
+	void (*f)(char *separator, va_list ap);
 } form;
 
 int _putchar(char c);
