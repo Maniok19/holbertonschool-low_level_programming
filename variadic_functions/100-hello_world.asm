@@ -1,17 +1,14 @@
-global _start
-
 section .data
-    message db "Hello, World", 0xA
-    message_length equ $ - message
-
+    message db "Hello, World", 10
 section .text
-_start:
-    mov rax, 1          ; system call number for write
-    mov rdi, 1          ; file descriptor 1 is stdout
-    mov rsi, message    ; address of the message
-    mov rdx, message_length ; length of the message
+global main
+main:
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, message
+    mov rdx, 13
     syscall
 
-    mov rax, 60         ; system call number for exit
-    mov rdi, 0        ; exit status 0
+    mov rax, 60
+    mov rdi, 0
     syscall
