@@ -1,17 +1,20 @@
-section .data
+section   .text
 
-	message db "Hello, World", 10
+global    main
 
-section .text
+	
+main:
+	mov  rax, 1                  ; write(
+	mov  rdi, 1                  ;   STDOUT_FILENO,
+	mov  rsi, message            ;   "Hello, world!\n",
+	mov  rdx, 13                 ;   sizeof("Hello, world!\n")
+	syscall                      ; invoke operating system to do the write
+	mov  rax, 60                 ; exit(
+	xor  rdi, rdi                ; EXIT_SUCCESS
+	syscall                      ; invoke to exit
 
-global _start
-_start:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, message
-	mov rdx, 13
-	syscall
+	section   .data
+message:
 
-	mov rax, 60
-	mov rdi, 0
-	syscall
+	db    "Hello, World", 10      ; note the newline at the end
+    msglen: equ $ - message           ; length of string
