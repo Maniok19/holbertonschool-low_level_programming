@@ -1,7 +1,7 @@
 global _start
 
 section .data
-    message db "Hello, World", 10  ; 10 is the ASCII code for newline
+    message db "Hello, World"
     message_length equ $ - message
 
 section .text
