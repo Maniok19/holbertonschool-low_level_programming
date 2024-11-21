@@ -1,9 +1,9 @@
 section   .text
 
-global    main
+global    _start
 
 	
-main:
+_start:
 	mov  rax, 1                  ; write(
 	mov  rdi, 1                  ;   STDOUT_FILENO,
 	mov  rsi, message            ;   "Hello, world!\n",
