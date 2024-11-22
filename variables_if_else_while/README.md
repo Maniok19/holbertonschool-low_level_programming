@@ -1,48 +1,39 @@
-Project Overview
-This project contains a series of C programs that demonstrate basic programming concepts such as loops, conditionals, and random number generation. Each file in this directory is a standalone program with a specific functionality.
+# Variables, If, Else, While
 
-File Descriptions
+This project covers the basics of variables, conditional statements, and loops in C programming.
 
-0-positive_or_negative.c
-Description: Assigns a random number to the variable n and prints whether the number is positive, zero, or negative.
-Usage: Run the program to see the output based on the randomly generated number.
+## Table of Contents
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Files](#files)
+- [Usage](#usage)
+- [Author](#author)
 
-1-last_digit.c
-Description: Assigns a random number to the variable n and prints the last digit of the number, along with a message indicating whether the last digit is greater than 5, 0, or less than 6 and not 0.
-Usage: Run the program to see the output based on the randomly generated number.
+## Introduction
+This project is part of the Holberton School curriculum. It introduces the concepts of variables, if-else statements, and while loops in C programming.
 
-2-print_alphabet.c
-Description: Prints the alphabet in lowercase.
-Usage: Run the program to see the lowercase alphabet printed.
+## Requirements
+- Ubuntu 20.04 LTS
+- gcc 9.3.0
 
-3-print_alphabets.c
-Description: Prints the alphabet in both lowercase and uppercase.
-Usage: Run the program to see both lowercase and uppercase alphabets printed.
+## Files
+- `0-positive_or_negative.c` - Determines if a number is positive, negative, or zero.
+- `1-last_digit.c` - Prints the last digit of a randomly generated number.
+- `2-print_alphabet.c` - Prints the alphabet in lowercase.
+- `3-print_alphabets.c` - Prints the alphabet in both lowercase and uppercase.
+- `4-print_alphabt.c` - Prints the alphabet in lowercase, except for 'q' and 'e'.
+- `5-print_numbers.c` - Prints all single digit numbers of base 10 starting from 0.
+- `6-print_numberz.c` - Prints all single digit numbers of base 10 starting from 0, using only putchar.
+- `7-print_tebahpla.c` - Prints the lowercase alphabet in reverse.
+- `8-print_base16.c` - Prints all the numbers of base 16 in lowercase.
+- `9-print_comb.c` - Prints all possible combinations of single-digit numbers.
 
-4-print_alphabt.c
-Description: Prints the alphabet in lowercase, excluding the letters 'q' and 'e'.
-Usage: Run the program to see the lowercase alphabet printed without 'q' and 'e'.
+## Usage
+To compile and run any of the programs, use the following commands:
+```sh
+gcc -Wall -Werror -Wextra -pedantic <filename.c> -o <outputname>
+./<outputname>
+```
 
-5-print_numbers.c
-Description: Prints all single-digit numbers of base 10 starting from 0.
-Usage: Run the program to see the single-digit numbers printed.
-
-6-print_numberz.c
-Description: Prints all single-digit numbers of base 10 starting from 0, using only the putchar function.
-Usage: Run the program to see the single-digit numbers printed using putchar.
-
-7-print_tebahpla.c
-Description: Prints the lowercase alphabet in reverse order.
-Usage: Run the program to see the lowercase alphabet printed in reverse.
-
-8-print_base16.c
-Description: Prints all the numbers of base 16 in lowercase.
-Usage: Run the program to see the base 16 numbers printed.
-
-9-print_comb.c
-Description: Prints all possible combinations of single-digit numbers, separated by a comma and space, in ascending order.
-Usage: Run the program to see the combinations printed.
-How to Compile and Run
-
-To compile any of the C programs, use the following command in your terminal:
-gcc "nom du script"
+## Author
+Mano - [GitHub](https://github.com/Maniok19)

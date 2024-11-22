@@ -1,23 +1,61 @@
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+# Function Pointers
 
-General
-What are function pointers and how to use them
-What does a function pointer exactly hold
-Where does a function pointer point to in the virtual memory
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-All your files should end with a new line
-A README.md file, at the root of the folder of the project is mandatory
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-You are not allowed to use global variables
-No more than 5 functions per file
-The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
-You are allowed to use _putchar
-You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
-In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called function_pointers.h
-Don’t forget to push your header file
-All your header files should be include guarded
+## Overview
+This project covers the usage of function pointers in C programming. It includes various exercises and programs that demonstrate how to define, use, and manipulate function pointers.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Learning Objectives](#learning-objectives)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Files](#files)
+- [Author](#author)
+
+## Introduction
+Function pointers are a powerful feature in C that allow you to store the address of a function in a pointer variable. This enables you to call functions dynamically, pass functions as arguments to other functions, and create more flexible and reusable code.
+
+## Learning Objectives
+By the end of this project, you should be able to:
+- Understand what function pointers are and how to declare them.
+- Use function pointers to call functions.
+- Pass function pointers as arguments to other functions.
+- Use function pointers in arrays to create jump tables.
+- Understand the benefits and use cases of function pointers.
+
+## Requirements
+- Ubuntu 20.04 LTS
+- GCC compiler
+
+## Installation
+Clone the repository to your local machine:
+```sh
+git clone https://github.com/your_username/holbertonschool-low_level_programming.git
+```
+Navigate to the project directory:
+```sh
+cd holbertonschool-low_level_programming/function_pointers
+```
+
+## Usage
+Compile the C files using `gcc`:
+```sh
+gcc -Wall -Werror -Wextra -pedantic <filename.c> -o <output_name>
+```
+Run the compiled programs:
+```sh
+./<output_name>
+```
+
+## Files
+- `0-print_name.c` - A function that prints a name using a function pointer.
+- `1-array_iterator.c` - A function that executes a function given as a parameter on each element of an array.
+- `2-int_index.c` - A function that searches for an integer in an array using a function pointer.
+- `3-calc.h` - Header file containing all the function prototypes and data structures for a simple calculator.
+- `3-op_functions.c` - Functions that perform basic arithmetic operations.
+- `3-get_op_func.c` - A function that selects the correct function to perform the operation asked by the user.
+- `3-main.c` - The main function that performs simple operations using function pointers.
+
+## Author
+Mano Delcourt
+- [GitHub](https://github.com/Maniok19)

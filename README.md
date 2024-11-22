@@ -1,52 +1,64 @@
 # Holberton School - Low Level Programming
 
-Bienvenue dans le super chapitre sur le langage C ! Ce projet contient une série de programmes en C qui démontrent des concepts de programmation de base tels que les boucles, les conditions, la gestion de la mémoire dynamique, les fonctions variadiques, et bien plus encore.
+Welcome to the Holberton School Low Level Programming repository! This repository contains various projects and exercises designed to help you master the fundamentals of low-level programming in C. Each project focuses on different aspects of C programming, from basic syntax and control structures to more advanced topics like dynamic memory allocation and data structures.
 
-## Structure du Projet
+## Table of Contents
+- [Introduction](#introduction)
+- [Projects](#projects)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
 
-Le projet est organisé en plusieurs répertoires, chacun contenant des programmes spécifiques à un sujet particulier :
+## Introduction
+This repository is part of the Holberton School curriculum. It aims to provide a comprehensive understanding of low-level programming concepts through hands-on projects and exercises. By working through these projects, you will gain practical experience and develop a strong foundation in C programming.
 
-- `argc_argv/` : Programmes utilisant les arguments de la ligne de commande.
-- `function_pointers/` : Programmes démontrant l'utilisation des pointeurs de fonction.
-- `functions_nested_loops/` : Programmes utilisant des fonctions et des boucles imbriquées.
-- `hello_world/` : Programmes d'introduction au langage C.
-- `malloc_free/` : Programmes sur l'allocation dynamique de mémoire.
-- `more_functions_nested_loops/` : Programmes avancés utilisant des fonctions et des boucles imbriquées.
-- `more_malloc_free/` : Programmes avancés sur l'allocation dynamique de mémoire.
-- `pointers_arrays_strings/` : Programmes utilisant des pointeurs, des tableaux et des chaînes de caractères.
-- `recursion/` : Programmes démontrant l'utilisation de la récursivité.
-- `structures_typedef/` : Programmes utilisant des structures et des typedefs.
-- `variables_if_else_while/` : Programmes utilisant des variables, des conditions et des boucles.
-- `variadic_functions/` : Programmes utilisant des fonctions variadiques.
+## Projects
+The repository is organized into several directories, each containing a specific project. Here are some of the key projects included:
 
-## Compilation et Exécution
+- **Hello World**: Introduction to C programming, basic syntax, and compilation.
+- **Variables, If, Else, While**: Basics of variables, conditional statements, and loops.
+- **Functions and Nested Loops**: Understanding functions and nested loops.
+- **More Functions and Nested Loops**: Advanced function usage and nested loops.
+- **Pointers, Arrays, and Strings**: Working with pointers, arrays, and strings.
+- **Recursion**: Implementing and understanding recursion.
+- **Malloc and Free**: Dynamic memory allocation using `malloc` and `free`.
+- **Structures and Typedef**: Using structures and typedef in C.
+- **Function Pointers**: Understanding and using function pointers.
+- **Variadic Functions**: Working with functions that accept a variable number of arguments.
 
-Pour compiler un programme, utilisez la commande suivante dans votre terminal :
+## Requirements
+- Ubuntu 20.04 LTS
+- GCC compiler
 
+## Installation
+Clone the repository to your local machine:
 ```sh
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 nom_du_script.c -o nom_du_script
+git clone https://github.com/your_username/holbertonschool-low_level_programming.git
+```
+Navigate to the project directory:
+```sh
+cd holbertonschool-low_level_programming
 ```
 
-Pour exécuter le programme compilé, utilisez la commande suivante :
-
+## Usage
+Compile the C files using `gcc`:
 ```sh
-./nom_du_script
+gcc -Wall -Werror -Wextra -pedantic <filename.c> -o <output_name>
+```
+Run the compiled programs:
+```sh
+./<output_name>
 ```
 
-## Exemples de Programmes
+## Contributing
+Contributions are welcome! If you have any suggestions or improvements, please create a pull request or open an issue.
 
-Exemples de Programmes
-`variables_if_else_while/0-positive_or_negative.c`
-Description : Assigne un nombre aléatoire à la variable n et affiche si le nombre est positif, zéro ou négatif.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Usage : Exécutez le programme pour voir le résultat basé sur le nombre généré aléatoirement.
-
-`variadic_functions/3-print_all.c`
-Description : Imprime tous les types d'arguments passés à la fonction.
-
-
-Style de Code
-Ce code doit utiliser le style Betty. Il a été vérifié à l'aide des scripts betty-style.pl et betty-doc.pl.
-
-Auteurs
+## Author
 Mano Delcourt
+- [GitHub](https://github.com/Maniok19)
