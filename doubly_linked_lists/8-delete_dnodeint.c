@@ -26,12 +26,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		{
 			if ((*head)->next)
 				(*head)->next->prev = (*head)->prev;
-		(*head)->prev->next = (*head)->next;
-		free(*head);
-		return (1);
+			(*head)->prev->next = (*head)->next;
+			free(*head);
+			return (1);
 		}
-	}
 		*head = (*head)->next;
 		i++;
+	}
 	return (-1);
 }
