@@ -4,6 +4,7 @@
 #include <unistd.h>
 
 #define BUFFER_SIZE 1024
+
 /**
  * error_exit - prints an error message and exits with a status code
  * @code: the status code to exit with
@@ -16,6 +17,7 @@ void error_exit(int code, const char *message, const char *filename)
 	dprintf(STDERR_FILENO, message, filename);
 	exit(code);
 }
+
 /**
  * main - copies the content of a file to another file
  * @argc: the number of arguments
@@ -49,10 +51,10 @@ int main(int argc, char *argv[])
 		error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
 	if (close(fd_from) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", fd_from);
+		error_exit(100, "Error: Can't close fd %d\n", argv[1]);
 
 	if (close(fd_to) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", fd_to);
+		error_exit(100, "Error: Can't close fd %d\n", argv[2]);
 
 	return (0);
 }
