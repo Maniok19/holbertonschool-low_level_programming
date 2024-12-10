@@ -201,7 +201,8 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * @argv: An array containing the program command line arguments
  * Return: 0 on success, 98 on failure
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 	int fd;
 	Elf64_Ehdr header;
 
@@ -237,5 +238,5 @@ int main(int argc, char *argv[]) {
 	print_entry(header.e_entry, header.e_ident);
 
 	close(fd);
-	return 0;
+	return (0);
 }
